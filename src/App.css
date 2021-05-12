@@ -19,8 +19,8 @@
 }
 
 .Results {
-  max-width: 50%;
-  padding-top: 100px;
+  max-width: 70%;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;

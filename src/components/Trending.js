@@ -2,7 +2,7 @@ import { ReactTabulator } from "react-tabulator";
 import "react-tabulator/css/bootstrap/tabulator_bootstrap.min.css";
 import "react-tabulator/lib/styles.css";
 
-export default function Results(props) {
+export default function Trending(props) {
   const columns = [
     {
       title: "Name",
@@ -30,25 +30,4 @@ export default function Results(props) {
       formatter: "progress",
     },
   ];
-
-  const data = props.movieData;
-  const options = {
-    responsiveLayout: "collapse",
-  };
-  return (
-    <div className="Results">
-      {data.length > 0 && (
-        <>
-          <ReactTabulator
-            className="table-bordered"
-            data={data}
-            columns={columns}
-            tooltips={true}
-            layout={"fitColumns"}
-            height={420}
-          />
-        </>
-      )}
-    </div>
-  );
 }
