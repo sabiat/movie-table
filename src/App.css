@@ -1,6 +1,7 @@
-/* .App {
-  text-align: center;
-} */
+.App {
+  text-align: left;
+  padding: 100px;
+}
 
 .App-header {
   background-color: #282c34;
@@ -15,4 +16,13 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.Results {
+  max-width: 50%;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

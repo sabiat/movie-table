@@ -15,7 +15,7 @@ function App() {
   };
   return (
     <div className="App">
-      <h1>Hello world</h1>
+      <h1>Search for a movie:</h1>
       <SearchBar fetchData={fetchData} />
       <Results movieData={movies} />
     </div>
