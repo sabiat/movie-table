@@ -7,18 +7,20 @@ export default function Results(props) {
     {
       title: "Name",
       field: "title",
-      width: 200,
+      width: 250,
       editor: "input",
       headerFilter: "input",
     },
     {
       title: "Release Date",
       field: "release_date",
+      width: 150,
       hozAlign: "left",
     },
     {
       title: "Average Vote",
       field: "vote_average",
+      width: 175,
       formatter: "star",
       formatterParams: { stars: 10 },
     },
@@ -28,6 +30,12 @@ export default function Results(props) {
       field: "popularity",
       hozAlign: "left",
       formatter: "progress",
+      width: 175,
+    },
+    {
+      title: "Description",
+      field: "overview",
+      formatter: "textarea",
     },
   ];
 

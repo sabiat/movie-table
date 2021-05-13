@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Button from "react-bootstrap/Button";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function SearchBar(props) {
   const styling = { width: "40%", padding: "0.5rem" };
@@ -12,7 +14,7 @@ export default function SearchBar(props) {
         value={input}
         onChange={(event) => setInput(event.target.value)}
       ></input>
-      <button onClick={() => props.fetchData(input)}>Search</button>
+      <Button onClick={() => props.fetchData(input)}>Search</Button>
     </div>
   );
 }
