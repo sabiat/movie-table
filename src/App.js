@@ -32,7 +32,7 @@ function App() {
       <h1>Search for a movie:</h1>
       <SearchBar fetchData={fetchData} />
       <Results movieData={movies} />
-      <h1>Or, view trending movies this week:</h1>
+      <h2>Or, browse the trending movies this week:</h2>
       <Results movieData={trendingMovies} />
     </div>
   );
