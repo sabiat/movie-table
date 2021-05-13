@@ -36,6 +36,7 @@ export default function Results(props) {
       title: "Description",
       field: "overview",
       formatter: "textarea",
+      width: 490,
     },
   ];
 
