@@ -7,12 +7,16 @@ import Results from "./components/Results";
 function App() {
   const [movies, setMovies] = useState([]);
   const [trendingMovies, setTrendingMovies] = useState([]);
+  const [query, setQuery] = useState("");
   const fetchData = (query) => {
     axios
       .get(
         `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_MOVIEDB}&language=en-US&query=${query}&page=1&include_adult=false`
       )
-      .then((response) => setMovies(response.data.results));
+      .then((response) => {
+        setMovies(response.data.results);
+        setQuery(query);
+      });
   };
 
   const fetchTrendingMovies = () => {
@@ -30,7 +34,9 @@ function App() {
   return (
     <div className="App">
       <h1>Search for a movie:</h1>
+
       <SearchBar fetchData={fetchData} />
+      {query && <h3>Results matching "{query}":</h3>}
       <Results movieData={movies} />
       <h2>Or, browse the trending movies this week:</h2>
       <Results movieData={trendingMovies} />
