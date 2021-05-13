@@ -36,7 +36,7 @@ function App() {
       <h1>Search for a movie:</h1>
 
       <SearchBar fetchData={fetchData} />
-      {query && <h3>Results matching "{query}":</h3>}
+      {query && <h2>Results matching "{query}":</h2>}
       <Results movieData={movies} />
       <h2>Or, browse the trending movies this week:</h2>
       <Results movieData={trendingMovies} />

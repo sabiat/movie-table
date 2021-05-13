@@ -20,9 +20,13 @@
 
 .Results {
   max-width: 100%;
-  padding-top: 50px;
+  /* padding-top: 50px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.SearchContainer {
+  padding-bottom: 50px;
 }
