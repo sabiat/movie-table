@@ -44,7 +44,7 @@ export default function Results(props) {
     responsiveLayout: "collapse",
   };
   return (
-    <div className="Results">
+    <div className="results">
       {data.length > 0 && (
         <ReactTabulator
           className="table-bordered"

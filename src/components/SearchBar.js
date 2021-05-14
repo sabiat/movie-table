@@ -12,7 +12,7 @@ export default function SearchBar(props) {
   };
 
   return (
-    <div className="SearchContainer">
+    <div className="searchContainer">
       <input
         className="searchbar"
         type="text"

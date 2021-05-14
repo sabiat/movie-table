@@ -11,7 +11,7 @@ h1 {
   padding-bottom: 25px;
 }
 
-.Results {
+.results {
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@ h1 {
   padding-bottom: 25px;
 }
 
-.SearchContainer {
+.searchContainer {
   padding-bottom: 25px;
 }
 
