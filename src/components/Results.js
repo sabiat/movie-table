@@ -14,7 +14,6 @@ export default function Results(props) {
       title: "Name",
       field: "title",
       width: 250,
-      editor: "input",
       headerFilter: "input",
     },
     {
@@ -29,7 +28,6 @@ export default function Results(props) {
       width: 175,
       formatter: "star",
       formatterParams: { stars: 10 },
-      editor: "autocomplete",
       editorParams: {
         allowEmpty: true,
         showListOnEmpty: true,
