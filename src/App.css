@@ -31,3 +31,7 @@ h1 {
   margin-top: 5px;
   border-radius: 25px;
 }
+
+.searchbar:focus {
+  border-radius: 0;
+}
