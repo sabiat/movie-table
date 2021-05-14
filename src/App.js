@@ -16,7 +16,8 @@ function App() {
       .then((response) => {
         setMovies(response.data.results);
         setQuery(query);
-      });
+      })
+      .catch((error) => console.log(error));
   };
 
   const fetchTrendingMovies = () => {
