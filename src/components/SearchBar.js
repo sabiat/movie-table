@@ -3,7 +3,6 @@ import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function SearchBar(props) {
-  const styling = { width: "40%", padding: "0.5rem" };
   const [input, setInput] = useState("");
 
   const handleKeyPress = function (event) {
@@ -15,14 +14,16 @@ export default function SearchBar(props) {
   return (
     <div className="SearchContainer">
       <input
+        className="searchbar"
         type="text"
-        style={styling}
         placeholder="Ex. 'Batman'"
         value={input}
         onChange={(event) => setInput(event.target.value)}
         onKeyUp={(event) => handleKeyPress(event)}
       ></input>
-      <Button onClick={() => props.fetchData(input)}>Search</Button>
+      <Button variant="outline-dark" onClick={() => props.fetchData(input)}>
+        Search
+      </Button>
     </div>
   );
 }

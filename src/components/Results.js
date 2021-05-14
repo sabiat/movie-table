@@ -13,6 +13,7 @@ export default function Results(props) {
     {
       title: "Name",
       field: "title",
+      hozAlign: "left",
       width: 250,
       headerFilter: "input",
     },
@@ -36,7 +37,6 @@ export default function Results(props) {
       headerFilter: "select",
       headerFilterParams: { values: starOptions },
     },
-    // { title: "Image", field: "rating", hozAlign: "center", formatter: "star" },
     {
       title: "Popularity",
       field: "popularity",
@@ -59,16 +59,14 @@ export default function Results(props) {
   return (
     <div className="Results">
       {data.length > 0 && (
-        <>
-          <ReactTabulator
-            className="table-bordered"
-            data={data}
-            columns={columns}
-            tooltips={true}
-            layout={"fitColumns"}
-            height={420}
-          />
-        </>
+        <ReactTabulator
+          className="table-bordered"
+          data={data}
+          columns={columns}
+          tooltips={true}
+          layout={"fitColumns"}
+          height={420}
+        />
       )}
     </div>
   );

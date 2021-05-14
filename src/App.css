@@ -1,21 +1,14 @@
 .App {
   text-align: left;
-  padding: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  background-color: #fefae0;
 }
 
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
-
-.App-link {
-  color: #61dafb;
+h1 {
+  text-align: center;
+  padding-bottom: 25px;
 }
 
 .Results {
@@ -24,8 +17,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 25px;
 }
 
 .SearchContainer {
-  padding-bottom: 50px;
+  padding-bottom: 25px;
+}
+
+.searchbar {
+  width: 60%;
+  padding: 0.5rem;
+  margin-right: 5px;
+  margin-top: 5px;
 }

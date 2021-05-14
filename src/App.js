@@ -33,12 +33,12 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Search for a movie:</h1>
-
+      <h1>Welcome, find your next movie to watch</h1>
+      <h2>Search for a movie:</h2>
       <SearchBar fetchData={fetchData} />
       {query && <h2>Results matching "{query}":</h2>}
       <Results movieData={movies} />
-      <h2>Or, browse the trending movies this week:</h2>
+      <h2>Or, browse movies trending this week:</h2>
       <Results movieData={trendingMovies} />
     </div>
   );
