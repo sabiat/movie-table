@@ -3,6 +3,12 @@ import "react-tabulator/css/bootstrap/tabulator_bootstrap.min.css";
 import "react-tabulator/lib/styles.css";
 
 export default function Results(props) {
+  const starOptions = {
+    [""]: "All",
+    5: " > 5 stars",
+    10: "10 stars",
+  };
+
   const columns = [
     {
       title: "Name",
@@ -23,6 +29,14 @@ export default function Results(props) {
       width: 175,
       formatter: "star",
       formatterParams: { stars: 10 },
+      editor: "autocomplete",
+      editorParams: {
+        allowEmpty: true,
+        showListOnEmpty: true,
+        values: starOptions,
+      },
+      headerFilter: "select",
+      headerFilterParams: { values: starOptions },
     },
     // { title: "Image", field: "rating", hozAlign: "center", formatter: "star" },
     {
